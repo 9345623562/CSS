@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector</title>
+    <style>
+        *{
+            font-family: Arial;color:blueviolet;
+        }
+        p{
+            color:lightslategray;
+            font-family:Arial;
+        }
+        .note{
+            background-color: yellow;
+            text-align:center;
+        }
+        #main
+        {
+            background-color: aquamarine;
+            text-align:center;
+        }
+        h3,h4,h5{
+            background-color:burlywood; 
+            text-align: center;
+        }
+        div>p{
+            background-color: brown;
+            text-align:center;
+        }
+        h1+p{
+            background-color: aquamarine;
+            text-align:center;
+        }
+        input[type="text"]{
+            font-size: 20px;
+            background-color: bisque;
+        }
+        a:hover{
+            background-color: aqua;
+        }
+        input:focus{
+            background-color: beige;
+        }
+        button:active{
+            background-color: bisque;
+        }
+        h1::before{
+            content:"*";
+        }
+        h1::after{
+            content:"*";
+        }
+        p::first-letter{
+            color:red;font-size:25px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Universal Selector</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi commodi id labore cupiditate magnam 
+        laborum et adipisci placeat soluta aut, voluptates minus autem rerum maxime blanditiis nulla, 
+        fuga ipsum necessitatibus?</p>
+    <p class="note">The Class Selector is used on this line</p>
+    <h2 id="main">This is id Selector</h2>
+    <h3>this is grouping Selector</h3>
+    <h4>this is grouping selector</h4>
+    <h5>this is grouping selector</h5>
+    <div>
+        <p>this is Child Selector</p>
+        <selection>
+            <p>this is not style</p>
+        </selection>
+    </div>
+    <input type="text" placeholder="Enter Name">
+    <a href="#">This is Hover</a><br>
+    <input type="text" placeholder="Focus here"><br>
+    <button>Click Here</button>
+    <h1>Before After</h1>
+    <p>First-Letter</p>
+</body>
+</html>
